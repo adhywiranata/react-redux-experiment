@@ -12,5 +12,5 @@ npm install -g json-server
 
 - Run
 ``
-  json-server data/users.json
+  json-server data/users.json --port 1234
 ``
