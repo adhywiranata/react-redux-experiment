@@ -1,13 +1,15 @@
+import * as ActionTypes from './actionTypes';
+
 export const addUser = (name) => {
   return {
-    type: 'ADD_USER',
+    type: ActionTypes.ADD_USER,
     payload: name,
   };
 };
 
 export const fetchUserSuccess = (users) => {
   return {
-    type: 'FETCH_USER_SUCCESS',
+    type: ActionTypes.FETCH_USER_SUCCESS,
     payload: users,
   };
 };
