@@ -1,4 +1,7 @@
 import React from 'react';
+import { connect } from 'react-redux';
+
+import { addUser } from '../actions';
 
 class AddUserForm extends React.Component {
   constructor(props) {
@@ -30,5 +33,10 @@ class AddUserForm extends React.Component {
   };
 }
 
+const mapDispatchToProps = (dispatch) => {
+  return {
+    addUser: (name) => dispatch(addUser(name)),
+  };
+};
 
-export default AddUserForm;
+export default connect(null, mapDispatchToProps)(AddUserForm);

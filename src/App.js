@@ -6,11 +6,6 @@ import logo from './logo.svg';
 import './App.css';
 
 class App extends Component {
-
-  addUser(name) {
-    // DO NOTHING for now..
-  }
-
   render() {
     return (
       <div className="App">
@@ -19,7 +14,7 @@ class App extends Component {
           <h2>Users</h2>
         </div>
         <UserList />
-        <AddUserForm addUser={this.addUser.bind(this)} />
+        <AddUserForm />
       </div>
     );
   }
