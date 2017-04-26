@@ -3,6 +3,7 @@
 - Redux State to Component
 - Redux Actions
 - Redux Async Actions
+- Redux Action Creator Constants
 
 ## Running Server API
 - Installing JSON Server
