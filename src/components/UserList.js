@@ -1,18 +1,34 @@
 import React from 'react';
 import { connect } from 'react-redux';
 
-const UserList = (props) => {
-  return (
-    <div className="App-intro">
-      { props.users.map((user, index) => <p key={index}>{user.name}</p>)}
-    </div>
-  )
-};
+import { fetchUser } from '../actions';
+
+class UserList extends React.Component {
+  componentDidMount() {
+    this.props.fetchUser();
+  }
+
+  render() {
+    return (
+      <div className="App-intro">
+        { this.props.users.length === 0 && <h4>Loading Awesome Users....</h4>}
+        { this.props.users.map((user, index) => <p key={index}>{user.name}</p>)}
+      </div>
+    )
+  }
+}
+
 
 const mapStateToProps = (state) => {
   return {
     users: state.users
   }
-}
+};
 
-export default connect(mapStateToProps, null)(UserList);
+const mapDispatchToProps = (dispatch) => {
+  return {
+    fetchUser: () => dispatch(fetchUser()),
+  };
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(UserList);
