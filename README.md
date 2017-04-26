@@ -10,6 +10,7 @@
 npm install -g json-server
 ``
 
+- Run
 ``
   json-server data/users.json
 ``
