@@ -22,6 +22,15 @@ const styles = {
     display: 'flex',
     flexDirection: 'column',
   },
+  submitBtn: {
+    border: 0,
+    padding: 20,
+    backgroundColor: '#446CB3',
+    color: '#FFFFFF',
+    margin: 5,
+    marginTop: 20,
+    fontSize: '1em',
+  },
 };
 
 class AddUserForm extends React.Component {
@@ -44,7 +53,7 @@ class AddUserForm extends React.Component {
   render() {
     return (
       <div style={styles.addFormContainer}>
-        <h3>Add New User</h3>
+        <h3>ADD NEW USER</h3>
         <form
           onSubmit={(e) => {
             e.preventDefault();
@@ -81,7 +90,7 @@ class AddUserForm extends React.Component {
             value={this.state.description}
             handleChange={this.handleChange.bind(this)}
           />
-          <input type="submit" value="Add User" />
+          <input type="submit" value="Add User" style={styles.submitBtn} />
         </form>
       </div>
     );

@@ -6,6 +6,12 @@ const styles = {
     display: 'flex',
     flexDirection: 'column',
   },
+  formInput: {
+    padding: 10,
+    outline: 'none',
+    marginTop: 10,
+    marginBottom: 10,
+  },
 };
 
 const FormSection = props => (
@@ -16,6 +22,7 @@ const FormSection = props => (
       name={props.name}
       value={props.value}
       onChange={props.handleChange.bind(this)}
+      style={styles.formInput}
     />
   </div>
 );
