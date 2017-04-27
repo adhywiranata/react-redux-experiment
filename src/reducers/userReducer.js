@@ -9,7 +9,8 @@ const userReducer = (state = initialState, action) => {
       return newUsers;
     }
     case ADD_USER: {
-      const newUser = { name: action.payload };
+      const id = Math.max(...state.map(post => post.id)) + 1;
+      const newUser = { ...action.payload, id };
       const newUsers = [...state, newUser];
       return newUsers;
     }

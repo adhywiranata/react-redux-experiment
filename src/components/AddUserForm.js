@@ -33,15 +33,17 @@ const styles = {
   },
 };
 
+const initialState = {
+  name: '',
+  username: '',
+  email: '',
+  description: '',
+};
+
 class AddUserForm extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {
-      name: '',
-      username: '',
-      email: '',
-      description: '',
-    };
+    this.state = initialState;
   }
 
   handleChange(e) {
@@ -57,8 +59,8 @@ class AddUserForm extends React.Component {
         <form
           onSubmit={(e) => {
             e.preventDefault();
-            this.props.addUser(this.state.name);
-            this.setState({ name: '' });
+            this.props.addUser(this.state);
+            this.setState(initialState);
           }}
           style={styles.addForm}
         >

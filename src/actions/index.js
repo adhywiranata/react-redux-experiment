@@ -1,9 +1,9 @@
 import * as ActionTypes from './actionTypes';
 
-export const addUser = (name) => {
+export const addUser = (newUser) => {
   return {
     type: ActionTypes.ADD_USER,
-    payload: name,
+    payload: newUser,
   };
 };
 
