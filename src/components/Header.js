@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const styles = {
   header: {
@@ -19,6 +20,9 @@ const styles = {
     flex: 0.4,
     float: 'right',
   },
+  navLink: {
+    color: '#FFFFFF',
+  },
   navMenu: {
     float: 'left',
     padding: '0px 10px',
@@ -34,7 +38,9 @@ const Header = () => (
     <nav style={styles.nav}>
       <ul>
         { ['Users', 'Posts', 'login', 'logout'].map((menu, index) => (
-          <li key={index} style={styles.navMenu}>{menu}</li>
+          <Link key={index} to="/" style={styles.navLink}>
+            <li style={styles.navMenu}>{menu}</li>
+          </Link>
         )) }
       </ul>
     </nav>
