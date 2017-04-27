@@ -4,7 +4,7 @@
 - Redux Actions
 - Redux Async Actions
 - Redux Action Creator Constants
-- __step up!__ Add more complexity (CRUD App)
+- __step up!__ Add more complexity (User CRUD App)
 - React Router DOM
 - React - Redux Containers
 
