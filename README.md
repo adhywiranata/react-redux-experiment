@@ -4,6 +4,7 @@
 - Redux Actions
 - Redux Async Actions
 - Redux Action Creator Constants
+- __step up!__ Add more complexity (CRUD App)
 
 ## Running Server API
 - Installing JSON Server
@@ -13,5 +14,5 @@ npm install -g json-server
 
 - Run
 ``
-  json-server data/users.json --port 1234
+  json-server data/db.json --port 1234
 ``

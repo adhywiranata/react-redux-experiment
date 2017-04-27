@@ -1,0 +1,39 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Aaron",
+      "username": "justuser",
+      "email": "sample.email@gmail.com",
+      "description": "The harbringer of truth"
+    },
+    {
+      "id": 2,
+      "name": "Bulma",
+      "username": "justuser",
+      "email": "sample.email@gmail.com",
+      "description": "I am an honest person"
+    },
+    { 
+      "id": 3,
+      "name": "Charlotte",
+      "username": "justuser",
+      "email": "sample.email@gmail.com",
+      "description": "I am an honest person"
+    },
+    {
+      "id": 4,
+      "name": "Danella",
+      "username": "justuser",
+      "email": "sample.email@gmail.com",
+      "description": "I am an honest person"
+    },
+    {
+      "id": 5,
+      "name": "Eric",
+      "username": "justuser",
+      "email": "sample.email@gmail.com",
+      "description": "I am an honest person"
+    }
+  ]
+}
