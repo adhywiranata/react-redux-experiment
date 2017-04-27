@@ -36,3 +36,18 @@ export const fetchUser = () => {
       .then(data => dispatch(fetchUserSuccess(data)));
   };
 };
+
+export const fetchPostsSuccess = (newUser) => {
+  return {
+    type: ActionTypes.ADD_POST_SUCCESS,
+    payload: newUser,
+  };
+};
+
+export const fetchPosts = () => {
+  return (dispatch) => {
+    fetch('http://localhost:1234/api/posts')
+      .then(res => res.json())
+      .then(data => dispatch(fetchPostsSuccess(data)));
+  };
+};

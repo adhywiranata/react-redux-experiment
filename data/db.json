@@ -36,17 +36,47 @@
       "description": "I am an honest person"
     },
     {
-      "id": 6
-    },
-    {
-      "id": 7
-    },
-    {
       "name": "Datuk",
       "username": "Datuk",
       "email": "datuk@batuk.com",
       "description": "asdasd",
       "id": 8
+    }
+  ],
+  "posts": [
+    {
+      "id": 1,
+      "userId": 1,
+      "title": "How to Be A Coder",
+      "content": "Lorem ipsum dolor sit amet",
+      "createdAt": "1493291743219",
+      "createDate": "2017-04-27T09:25:15.091Z"
+    },
+    {
+      "id": 2,
+      "userId": 2,
+      "title": "How to Be A Dev",
+      "content": "Lorem ipsum dolor sit amet",
+      "createdAt": "1493291743219",
+      "createDate": "2017-04-27T09:25:15.091Z"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "postId": 1,
+      "userId": 2,
+      "comment": "hi this is a comment",
+      "createdAt": "1493291743219",
+      "createDate": "2017-04-27T09:25:15.091Z"
+    },
+    {
+      "id": 2,
+      "postId": 1,
+      "userId": 3,
+      "comment": "hi this is a second comment",
+      "createdAt": "1493291743219",
+      "createDate": "2017-04-27T09:25:15.091Z"
     }
   ]
 }
