@@ -10,6 +10,7 @@ const styles = {
     padding: 30,
     backgroundColor: '#22313F',
     color: '#FFFFFF',
+    height: '100vh',
     flex: 1,
     display: 'flex',
     flexDirection: 'column',

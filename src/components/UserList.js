@@ -11,9 +11,12 @@ class UserList extends React.Component {
 
   render() {
     return (
-      <div className="App-intro">
-        { this.props.users.length === 0 && <h4>Loading Awesome Users....</h4> }
-        { this.props.users.map((user, index) => <UserItem key={user.id} {...user} />) }
+      <div style={{ paddingTop: 30, flex: 1, display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }}>
+        <h2>Users</h2>
+        <div style={{ width: '50%', textAlign: 'center' }}>
+          { this.props.users.length === 0 && <h4>Loading Awesome Users....</h4> }
+          { this.props.users.map((user, index) => <UserItem key={user.id} {...user} />) }
+        </div>
       </div>
     )
   }

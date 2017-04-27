@@ -2,6 +2,8 @@ import React from 'react';
 
 const styles = {
   header: {
+    position: 'fixed',
+    width: '100%',
     backgroundColor: '#446CB3',
     padding: 20,
     color: '#FFFFFF',
