@@ -7,6 +7,7 @@
 - __step up!__ Add more complexity (User Create-Read App)
 - React Router DOM
 - React - Redux Containers
+- __step up!__ Add more complexity (Post Create-Read-Search App)
 
 ## Running Server API
 - Installing JSON Server
