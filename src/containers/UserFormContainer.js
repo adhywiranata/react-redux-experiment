@@ -2,7 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 
 import { addUser } from '../actions';
-import FormSection from './FormSection';
+import FormSection from '../components/FormSection';
 
 const styles = {
   addFormContainer: {
@@ -41,7 +41,7 @@ const initialState = {
   description: '',
 };
 
-class AddUserForm extends React.Component {
+class UserFormContainer extends React.Component {
   constructor(props) {
     super(props);
     this.state = initialState;
@@ -102,8 +102,8 @@ class AddUserForm extends React.Component {
 
 const mapDispatchToProps = (dispatch) => {
   return {
-    addUser: (name) => dispatch(addUser(name)),
+    addUser: (newUser) => dispatch(addUser(newUser)),
   };
 };
 
-export default connect(null, mapDispatchToProps)(AddUserForm);
+export default connect(null, mapDispatchToProps)(UserFormContainer);

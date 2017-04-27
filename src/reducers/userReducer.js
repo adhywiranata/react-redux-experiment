@@ -1,4 +1,4 @@
-import { FETCH_USER_SUCCESS, ADD_USER } from '../actions/actionTypes';
+import { FETCH_USER_SUCCESS, ADD_USER_SUCCESS } from '../actions/actionTypes';
 
 const initialState = [];
 
@@ -8,7 +8,7 @@ const userReducer = (state = initialState, action) => {
       const newUsers = action.payload;
       return newUsers;
     }
-    case ADD_USER: {
+    case ADD_USER_SUCCESS: {
       const id = Math.max(...state.map(post => post.id)) + 1;
       const newUser = { ...action.payload, id };
       const newUsers = [...state, newUser];

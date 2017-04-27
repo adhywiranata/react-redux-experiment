@@ -14,7 +14,7 @@
       "email": "sample.email@gmail.com",
       "description": "I am an honest person"
     },
-    { 
+    {
       "id": 3,
       "name": "Charlotte",
       "username": "justuser",
@@ -34,6 +34,19 @@
       "username": "justuser",
       "email": "sample.email@gmail.com",
       "description": "I am an honest person"
+    },
+    {
+      "id": 6
+    },
+    {
+      "id": 7
+    },
+    {
+      "name": "Datuk",
+      "username": "Datuk",
+      "email": "datuk@batuk.com",
+      "description": "asdasd",
+      "id": 8
     }
   ]
 }

@@ -3,7 +3,7 @@ import { BrowserRouter, Route } from 'react-router-dom';
 
 import Header from './components/Header';
 import UserList from './components/UserList';
-import AddUserForm from './components/AddUserForm';
+import UserFormContainer from './containers/UserFormContainer';
 
 class App extends Component {
   render() {
@@ -13,7 +13,7 @@ class App extends Component {
           <Header />
           <div style={{ paddingTop: 70 }}>
             <Route exact path="/" component={UserList} />
-            <Route path="/add-user" component={AddUserForm} />
+            <Route path="/add-user" component={UserFormContainer} />
           </div>
         </div>
       </BrowserRouter>

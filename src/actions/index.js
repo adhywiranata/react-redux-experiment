@@ -1,9 +1,24 @@
 import * as ActionTypes from './actionTypes';
 
-export const addUser = (newUser) => {
+export const addUserSuccess = (newUser) => {
   return {
-    type: ActionTypes.ADD_USER,
+    type: ActionTypes.ADD_USER_SUCCESS,
     payload: newUser,
+  };
+};
+
+export const addUser = (newUser) => {
+  return (dispatch) => {
+    fetch('http://localhost:1234/users',{
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(newUser),
+    })
+      .then(res => res.json())
+      .then(data => console.log(data))
+      .catch(err => console.log(err));
   };
 };
 
