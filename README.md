@@ -5,6 +5,8 @@
 - Redux Async Actions
 - Redux Action Creator Constants
 - __step up!__ Add more complexity (CRUD App)
+- React Router DOM
+- React - Redux Containers
 
 ## Running Server API
 - Installing JSON Server
