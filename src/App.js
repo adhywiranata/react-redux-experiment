@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { BrowserRouter, Route } from 'react-router-dom';
 
 import Header from './components/Header';
-import UserList from './components/UserList';
+import UserContainer from './containers/UserContainer';
 import UserFormContainer from './containers/UserFormContainer';
 
 class App extends Component {
@@ -12,7 +12,7 @@ class App extends Component {
         <div style={{ flex: 1, display: 'flex', flexDirection: 'column' }}>
           <Header />
           <div style={{ paddingTop: 70 }}>
-            <Route exact path="/" component={UserList} />
+            <Route exact path="/" component={UserContainer} />
             <Route path="/add-user" component={UserFormContainer} />
           </div>
         </div>

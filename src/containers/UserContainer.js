@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
 
 import { fetchUser } from '../actions';
-import UserItem from './UserItem';
+import UserItem from '../components/UserItem';
 
 const styles = {
   btn: {

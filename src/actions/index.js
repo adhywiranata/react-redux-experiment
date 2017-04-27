@@ -9,7 +9,7 @@ export const addUserSuccess = (newUser) => {
 
 export const addUser = (newUser) => {
   return (dispatch) => {
-    fetch('http://localhost:1234/users',{
+    fetch('http://localhost:1234/users', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
