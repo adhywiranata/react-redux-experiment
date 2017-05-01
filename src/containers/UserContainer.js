@@ -24,13 +24,15 @@ class UserList extends React.Component {
   }
 
   render() {
+    const { users, isFetching, fetchError, fetchErrorMessage } = this.props;
     return (
       <div style={{ paddingTop: 30, flex: 1, display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }}>
         <h2>Users</h2>
         <Link to="/add-user"><button style={styles.btn}>+ Add New User</button></Link>
         <div style={{ width: '50%', textAlign: 'center' }}>
-          { this.props.isFetching && <h4>Loading Awesome Users....</h4> }
-          { this.props.users.map((user, index) => <UserItem key={user.id} {...user} />) }
+          { isFetching && <h4>Loading Awesome Users....</h4> }
+          { fetchError && <span style={{ color: 'red'}}>{ fetchErrorMessage }</span> }
+          { !fetchError && users.map((user, index) => <UserItem key={user.id} {...user} />) }
         </div>
       </div>
     )
@@ -38,10 +40,10 @@ class UserList extends React.Component {
 }
 
 
-const mapStateToProps = (state) => {
+const mapStateToProps = ({ userData }) => {
+  const { users, isFetching, fetchError, fetchErrorMessage } = userData;
   return {
-    users: state.userData.users,
-    isFetching: state.userData.isFetching,
+    users, isFetching, fetchError, fetchErrorMessage,
   }
 };
 

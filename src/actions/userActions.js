@@ -38,5 +38,5 @@ export const fetchUsers = () => (dispatch) => {
   fetch('http://localhost:1234/users')
     .then(res => res.json())
     .then(data => dispatch(fetchUsersSuccess(data)))
-    .catch(err => dispatch(fetchUsersFailed(err)));
+    .catch(err => dispatch(fetchUsersFailed(err.toString())));
 };

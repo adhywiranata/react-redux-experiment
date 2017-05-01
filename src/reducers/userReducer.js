@@ -22,7 +22,7 @@ const fetchUser = (state, payload) => {
 
 const fetchUserFailed = (state, payload) => {
   return { ...state, isFetching: false, fetchError: true, fetchErrorMessage: payload };
-}
+};
 
 const addUser = (state, payload) => {
   const id = Math.max(...state.users.map(user => user.id)) + 1;
