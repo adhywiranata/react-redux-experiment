@@ -2,7 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
 
-import { fetchUser } from '../actions';
+import { fetchUsers } from '../actions';
 import UserItem from '../components/UserItem';
 
 const styles = {
@@ -20,7 +20,7 @@ const styles = {
 
 class UserList extends React.Component {
   componentDidMount() {
-    this.props.fetchUser();
+    this.props.fetchUsers();
   }
 
   render() {
@@ -46,7 +46,7 @@ const mapStateToProps = (state) => {
 
 const mapDispatchToProps = (dispatch) => {
   return {
-    fetchUser: () => dispatch(fetchUser()),
+    fetchUsers: () => dispatch(fetchUsers()),
   };
 };
 
