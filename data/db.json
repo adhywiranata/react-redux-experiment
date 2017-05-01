@@ -56,22 +56,28 @@
       "userId": 1,
       "title": "How to Be A Coder",
       "content": "Lorem ipsum dolor sit amet",
-      "createdAt": "1493291743219",
-      "createDate": "2017-04-27T09:25:15.091Z"
+      "createdAt": "2017-04-27T09:25:15.091Z"
     },
     {
       "id": 2,
       "userId": 2,
       "title": "How to Be A Dev",
       "content": "Lorem ipsum dolor sit amet",
-      "createdAt": "1493291743219",
-      "createDate": "2017-04-27T09:25:15.091Z"
+      "createdAt": "2017-04-27T09:25:15.091Z"
     },
     {
       "title": "Testing",
       "userId": 1,
       "content": "Loremmmmmmmm",
-      "id": 3
+      "id": 3,
+      "createdAt": "2017-04-27T09:25:15.091Z"
+    },
+    {
+      "title": "Keren Bruh",
+      "userId": 1,
+      "content": "wow",
+      "createdAt": "2017-05-01T15:37:29.207Z",
+      "id": 4
     }
   ],
   "comments": [

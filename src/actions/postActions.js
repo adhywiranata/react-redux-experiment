@@ -8,6 +8,7 @@ export const addPostSuccess = (newPost) => {
 };
 
 export const addPost = (newPost) => {
+  newPost.createdAt = new Date().toISOString();
   return (dispatch) => {
     fetch('http://localhost:1234/posts', {
       method: 'POST',

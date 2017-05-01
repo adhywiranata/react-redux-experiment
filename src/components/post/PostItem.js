@@ -10,10 +10,10 @@ const styles = {
   }
 };
 
-const PostItem = ({ title, content, user, createdAt, createDate, comments }) => (
+const PostItem = ({ title, content, user, createdAt, comments }) => (
   <div style={styles.userItem}>
     <p>
-      posted by { user.name } { moment(createDate).fromNow() }
+      posted by { user.name } { moment(createdAt).fromNow() }
     </p>
     <h3>{ title }</h3>
     <p>{ content }</p>
