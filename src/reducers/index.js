@@ -4,7 +4,7 @@ import userReducer from './userReducer';
 import postReducer from './postReducer';
 
 const rootReducer = combineReducers({
-  users: userReducer,
+  userData: userReducer,
   posts: postReducer,
 });
 

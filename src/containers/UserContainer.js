@@ -29,7 +29,7 @@ class UserList extends React.Component {
         <h2>Users</h2>
         <Link to="/add-user"><button style={styles.btn}>+ Add New User</button></Link>
         <div style={{ width: '50%', textAlign: 'center' }}>
-          { this.props.users.length === 0 && <h4>Loading Awesome Users....</h4> }
+          { this.props.isFetching && <h4>Loading Awesome Users....</h4> }
           { this.props.users.map((user, index) => <UserItem key={user.id} {...user} />) }
         </div>
       </div>
@@ -40,7 +40,8 @@ class UserList extends React.Component {
 
 const mapStateToProps = (state) => {
   return {
-    users: state.users
+    users: state.userData.users,
+    isFetching: state.userData.isFetching,
   }
 };
 
