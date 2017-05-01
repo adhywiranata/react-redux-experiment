@@ -1,4 +1,4 @@
-import { FETCH_USER_SUCCESS, ADD_USER_SUCCESS } from '../actions/actionTypes';
+import { FETCH_USER_SUCCESS, ADD_USER_SUCCESS } from '../actions/constants';
 
 const initialState = [];
 

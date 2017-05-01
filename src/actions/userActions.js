@@ -1,8 +1,8 @@
-import * as ActionTypes from './constants';
+import { FETCH_USER_SUCCESS, ADD_USER_SUCCESS } from './constants';
 
 export const addUserSuccess = (newUser) => {
   return {
-    type: ActionTypes.ADD_USER_SUCCESS,
+    type: ADD_USER_SUCCESS,
     payload: newUser,
   };
 };
@@ -24,7 +24,7 @@ export const addUser = (newUser) => {
 
 export const fetchUsersSuccess = (users) => {
   return {
-    type: ActionTypes.FETCH_USER_SUCCESS,
+    type: FETCH_USER_SUCCESS,
     payload: users,
   };
 };

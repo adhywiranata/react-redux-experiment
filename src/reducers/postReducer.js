@@ -1,4 +1,4 @@
-import { FETCH_POST_SUCCESS, ADD_POST_SUCCESS } from '../actions/actionTypes';
+import { FETCH_POST_SUCCESS, ADD_POST_SUCCESS } from '../actions/constants';
 
 const initialState = [];
 
