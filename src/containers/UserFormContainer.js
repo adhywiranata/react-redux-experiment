@@ -34,6 +34,7 @@ class UserFormContainer extends React.Component {
           pathname: '/users',
         }}/> }
         <h3>ADD NEW USER</h3>
+        { this.props.updateError && <span style={{ color: 'red'}}>{  this.props.updateDataErrorMessage }</span> }
         <form
           onSubmit={(e) => {
             e.preventDefault();
@@ -77,9 +78,12 @@ class UserFormContainer extends React.Component {
   };
 }
 
-const mapStateToProps = (state) => {
+const mapStateToProps = ({ userData }) => {
+  const { isUpdated, updateError, updateDataErrorMessage } = userData;
   return {
-    isUpdated: state.userData.isUpdated,
+    isUpdated,
+    updateError,
+    updateDataErrorMessage,
   };
 };
 

@@ -28,7 +28,7 @@ export const addUser = newUser => (dispatch) => {
   })
     .then(res => res.json())
     .then(data => dispatch(addUserSuccess(newUser)))
-    .catch(err => dispatch(addUserFailed(err)));
+    .catch(err => dispatch(addUserFailed(err.toString())));
 };
 
 export const fetchUsersSuccess = users => ({
