@@ -48,6 +48,13 @@
       "email": "kerenbingits@gmail.com",
       "description": "asdasd",
       "id": 9
+    },
+    {
+      "name": "test",
+      "username": "bro",
+      "email": "brotest@mgail.com",
+      "description": "qwqwe",
+      "id": 10
     }
   ],
   "posts": [
