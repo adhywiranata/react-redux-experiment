@@ -1,19 +1,27 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter, Route } from 'react-router-dom';
+
+import Header from './components/core/Header';
+import UserContainer from './containers/UserContainer';
+import PostContainer from './containers/PostContainer';
+import UserFormContainer from './containers/UserFormContainer';
+import PostFormContainer from './containers/PostFormContainer';
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h2>Welcome to React</h2>
+      <BrowserRouter>
+        <div style={{ flex: 1, display: 'flex', flexDirection: 'column' }}>
+          <Header />
+          <div style={{ paddingTop: 70 }}>
+            <Route exact path="/" component={UserContainer} />
+            <Route path="/users" component={UserContainer} />
+            <Route path="/posts" component={PostContainer} />
+            <Route path="/add-user" component={UserFormContainer} />
+            <Route path="/add-post" component={PostFormContainer} />
+          </div>
         </div>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-      </div>
+      </BrowserRouter>
     );
   }
 }

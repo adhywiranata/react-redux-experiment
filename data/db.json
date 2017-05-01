@@ -1,0 +1,278 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Aaron",
+      "username": "justuser",
+      "email": "sample.email@gmail.com",
+      "description": "The harbringer of truth"
+    },
+    {
+      "id": 2,
+      "name": "Bulma",
+      "username": "justuser",
+      "email": "sample.email@gmail.com",
+      "description": "I am an honest person"
+    },
+    {
+      "id": 3,
+      "name": "Charlotte",
+      "username": "justuser",
+      "email": "sample.email@gmail.com",
+      "description": "I am an honest person"
+    },
+    {
+      "id": 4,
+      "name": "Danella",
+      "username": "justuser",
+      "email": "sample.email@gmail.com",
+      "description": "I am an honest person"
+    },
+    {
+      "id": 5,
+      "name": "Eric",
+      "username": "justuser",
+      "email": "sample.email@gmail.com",
+      "description": "I am an honest person"
+    },
+    {
+      "name": "Datuk",
+      "username": "Datuk",
+      "email": "datuk@batuk.com",
+      "description": "asdasd",
+      "id": 8
+    },
+    {
+      "name": "Keren",
+      "username": "Banget",
+      "email": "kerenbingits@gmail.com",
+      "description": "asdasd",
+      "id": 9
+    },
+    {
+      "name": "test",
+      "username": "bro",
+      "email": "brotest@mgail.com",
+      "description": "qwqwe",
+      "id": 10
+    },
+    {
+      "name": "Baurku",
+      "username": "wow",
+      "email": "asd@gmail.com",
+      "description": "asdasd",
+      "id": 11
+    },
+    {
+      "name": "Kerenbroh",
+      "username": "kerenbroh",
+      "email": "kerenbroh@gmail.com",
+      "description": "test",
+      "id": 12
+    },
+    {
+      "name": "COol",
+      "username": "Kewls",
+      "email": "kerenbingits@gmail.com",
+      "description": "aosd",
+      "id": 13
+    },
+    {
+      "name": "Wow",
+      "username": "Ker",
+      "email": "adhycung2@gmail.com",
+      "description": "asd",
+      "isSubmitted": false,
+      "id": 14
+    },
+    {
+      "name": "wow",
+      "username": "oas",
+      "email": "adhycung2@gmail.com",
+      "description": "asd",
+      "isSubmitted": false,
+      "id": 15
+    },
+    {
+      "name": "uvuevuevueosas",
+      "username": "uvuevuevueosas",
+      "email": "uvuevuevueosas@gmail.com",
+      "description": "asdasd",
+      "isSubmitted": false,
+      "id": 16
+    },
+    {
+      "name": "Skill Mastery",
+      "username": "adhy@hacktiv8.com",
+      "email": "adhywiranatap@gmail.com",
+      "description": "asd",
+      "isSubmitted": false,
+      "id": 17
+    },
+    {
+      "name": "qwe",
+      "username": "qwe",
+      "email": "adhycung2@gmail.com",
+      "description": "qw",
+      "isSubmitted": false,
+      "id": 18
+    },
+    {
+      "name": "asd",
+      "username": "weqwe",
+      "email": "qwe",
+      "description": "asdasd",
+      "isSubmitted": false,
+      "id": 19
+    },
+    {
+      "name": "asd",
+      "username": "asd",
+      "email": "asd@gmail.com",
+      "description": "asd",
+      "isSubmitted": false,
+      "id": 20
+    },
+    {
+      "name": "qwe",
+      "username": "qwe",
+      "email": "qwe",
+      "description": "asd",
+      "isSubmitted": false,
+      "id": 21
+    },
+    {
+      "name": "Wow",
+      "username": "weqwe",
+      "email": "adhywiranatap@gmail.com",
+      "description": "asdasd",
+      "isSubmitted": false,
+      "id": 22
+    },
+    {
+      "name": "Adhy Test Form Frontend Baru",
+      "username": "adhy@hacktiv8.com",
+      "email": "adhycung2@gmail.com",
+      "description": "asd",
+      "isSubmitted": false,
+      "id": 23
+    },
+    {
+      "name": "wow",
+      "username": "adhy@hacktiv8.com",
+      "email": "adhywiranatap@gmail.com",
+      "description": "asd",
+      "isSubmitted": false,
+      "id": 24
+    },
+    {
+      "name": "qwe",
+      "username": "adhy@hacktiv8.com",
+      "email": "adhycung2@gmail.com",
+      "description": "asd",
+      "isSubmitted": false,
+      "id": 25
+    },
+    {
+      "name": "Wow",
+      "username": "weqwe",
+      "email": "weqwe",
+      "description": "a",
+      "isSubmitted": false,
+      "id": 26
+    },
+    {
+      "name": "keren",
+      "username": "ia",
+      "email": "adhycung2@gmail.com",
+      "description": "asd",
+      "isSubmitted": false,
+      "id": 27
+    },
+    {
+      "name": "q",
+      "username": "qwe",
+      "email": "qwe",
+      "description": "qweq",
+      "isSubmitted": false,
+      "id": 28
+    },
+    {
+      "name": "Wow",
+      "username": "ea",
+      "email": "asd@gmail.com",
+      "description": "asd",
+      "isSubmitted": true,
+      "id": 29
+    }
+  ],
+  "posts": [
+    {
+      "id": 1,
+      "userId": 1,
+      "title": "How to Be A Coder",
+      "content": "Lorem ipsum dolor sit amet",
+      "createdAt": "2017-04-27T09:25:15.091Z"
+    },
+    {
+      "id": 2,
+      "userId": 2,
+      "title": "How to Be A Dev",
+      "content": "Lorem ipsum dolor sit amet",
+      "createdAt": "2017-04-27T09:25:15.091Z"
+    },
+    {
+      "title": "Testing",
+      "userId": 1,
+      "content": "Loremmmmmmmm",
+      "id": 3,
+      "createdAt": "2017-04-27T09:25:15.091Z"
+    },
+    {
+      "title": "Keren Bruh",
+      "userId": 1,
+      "content": "wow",
+      "createdAt": "2017-05-01T15:37:29.207Z",
+      "id": 4
+    },
+    {
+      "title": "Keyen Bo",
+      "userId": 1,
+      "content": "Woats",
+      "createdAt": "2017-05-01T15:55:08.280Z",
+      "id": 5
+    },
+    {
+      "title": "Kerne",
+      "userId": 1,
+      "content": "woagh",
+      "createdAt": "2017-05-01T16:08:22.767Z",
+      "id": 6
+    },
+    {
+      "title": "Keren",
+      "userId": 1,
+      "content": "wow",
+      "createdAt": "2017-05-01T16:08:48.929Z",
+      "id": 7
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "postId": 1,
+      "userId": 2,
+      "comment": "hi this is a comment",
+      "createdAt": "1493291743219",
+      "createDate": "2017-04-27T09:25:15.091Z"
+    },
+    {
+      "id": 2,
+      "postId": 1,
+      "userId": 3,
+      "comment": "hi this is a second comment",
+      "createdAt": "1493291743219",
+      "createDate": "2017-04-27T09:25:15.091Z"
+    }
+  ]
+}

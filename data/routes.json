@@ -1,0 +1,3 @@
+{
+  "/api/posts": "/posts?_expand=user&_embed=comments"
+}
