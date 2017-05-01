@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { BrowserRouter, Route } from 'react-router-dom';
 
-import Header from './components/Header';
+import Header from './components/core/Header';
 import UserContainer from './containers/UserContainer';
 import PostContainer from './containers/PostContainer';
 import UserFormContainer from './containers/UserFormContainer';

@@ -37,9 +37,9 @@ const Header = () => (
     <div style={styles.logo}>Logo Blog</div>
     <nav style={styles.nav}>
       <ul>
-        { ['Users', 'Posts', 'login', 'logout'].map((menu, index) => (
-          <Link key={index} to="/" style={styles.navLink}>
-            <li style={styles.navMenu}>{menu}</li>
+        { [{ label: 'Users', link: '/' }, { label: 'Posts', link: '/posts'}].map((menu, index) => (
+          <Link key={index} to={menu.link} style={styles.navLink}>
+            <li style={styles.navMenu}>{menu.label}</li>
           </Link>
         )) }
       </ul>
