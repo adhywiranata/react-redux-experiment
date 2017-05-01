@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
 
 import { fetchPosts } from '../actions';
-import PostItem from '../components/PostItem';
+import PostItem from '../components/post/PostItem';
 
 const styles = {
   btn: {
