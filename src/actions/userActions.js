@@ -2,7 +2,9 @@ import {
   FETCH_USER_SUCCESS,
   FETCH_USER_LOADING,
   FETCH_USER_FAILED,
-  ADD_USER_SUCCESS
+  ADD_USER_LOADING,
+  ADD_USER_SUCCESS,
+  ADD_USER_FAILED,
 } from './constants';
 
 export const addUserSuccess = newUser => ({
@@ -10,7 +12,13 @@ export const addUserSuccess = newUser => ({
   payload: newUser,
 });
 
+export const addUserFailed = err => ({
+  type: ADD_USER_FAILED,
+  payload: err,
+});
+
 export const addUser = newUser => (dispatch) => {
+  dispatch({ type: ADD_USER_LOADING });
   fetch('http://localhost:1234/users', {
     method: 'POST',
     headers: {
@@ -20,7 +28,7 @@ export const addUser = newUser => (dispatch) => {
   })
     .then(res => res.json())
     .then(data => dispatch(addUserSuccess(newUser)))
-    .catch(err => console.log(err));
+    .catch(err => dispatch(addUserFailed(err)));
 };
 
 export const fetchUsersSuccess = users => ({

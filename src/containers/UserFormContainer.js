@@ -1,5 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
+import { Redirect } from 'react-router';
 
 import { addUser } from '../actions';
 import FormSection from '../components/FormSection';
@@ -11,6 +12,7 @@ const initialState = {
   username: '',
   email: '',
   description: '',
+  isSubmitted: false,
 };
 
 class UserFormContainer extends React.Component {
@@ -28,12 +30,15 @@ class UserFormContainer extends React.Component {
   render() {
     return (
       <div style={styles.addFormContainer}>
+        { (this.state.isSubmitted && this.props.isUpdated) && <Redirect to={{
+          pathname: '/users',
+        }}/> }
         <h3>ADD NEW USER</h3>
         <form
           onSubmit={(e) => {
             e.preventDefault();
             this.props.addUser(this.state);
-            this.setState(initialState);
+            this.setState({ ...initialState, isSubmitted: true });
           }}
           style={styles.addForm}
         >
@@ -72,10 +77,16 @@ class UserFormContainer extends React.Component {
   };
 }
 
+const mapStateToProps = (state) => {
+  return {
+    isUpdated: state.userData.isUpdated,
+  };
+};
+
 const mapDispatchToProps = (dispatch) => {
   return {
     addUser: (newUser) => dispatch(addUser(newUser)),
   };
 };
 
-export default connect(null, mapDispatchToProps)(UserFormContainer);
+export default connect(mapStateToProps, mapDispatchToProps)(UserFormContainer);
