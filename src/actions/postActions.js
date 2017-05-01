@@ -15,7 +15,7 @@ export const addPost = newPost => (dispatch) => {
     body: JSON.stringify(newPost),
   })
     .then(res => res.json())
-    .then(data => console.log(data))
+    .then(data => dispatch(addPostSuccess(newPost)))
     .catch(err => console.log(err));
 };
 

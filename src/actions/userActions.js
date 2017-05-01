@@ -14,7 +14,7 @@ export const addUser = newUser => (dispatch) => {
     body: JSON.stringify(newUser),
   })
     .then(res => res.json())
-    .then(data => console.log(data))
+    .then(data => dispatch(addUserSuccess(newUser)))
     .catch(err => console.log(err));
 };
 

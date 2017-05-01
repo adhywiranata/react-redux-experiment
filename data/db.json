@@ -55,6 +55,20 @@
       "email": "brotest@mgail.com",
       "description": "qwqwe",
       "id": 10
+    },
+    {
+      "name": "Baurku",
+      "username": "wow",
+      "email": "asd@gmail.com",
+      "description": "asdasd",
+      "id": 11
+    },
+    {
+      "name": "Kerenbroh",
+      "username": "kerenbroh",
+      "email": "kerenbroh@gmail.com",
+      "description": "test",
+      "id": 12
     }
   ],
   "posts": [
@@ -92,6 +106,20 @@
       "content": "Woats",
       "createdAt": "2017-05-01T15:55:08.280Z",
       "id": 5
+    },
+    {
+      "title": "Kerne",
+      "userId": 1,
+      "content": "woagh",
+      "createdAt": "2017-05-01T16:08:22.767Z",
+      "id": 6
+    },
+    {
+      "title": "Keren",
+      "userId": 1,
+      "content": "wow",
+      "createdAt": "2017-05-01T16:08:48.929Z",
+      "id": 7
     }
   ],
   "comments": [
