@@ -69,6 +69,13 @@
       "email": "kerenbroh@gmail.com",
       "description": "test",
       "id": 12
+    },
+    {
+      "name": "COol",
+      "username": "Kewls",
+      "email": "kerenbingits@gmail.com",
+      "description": "aosd",
+      "id": 13
     }
   ],
   "posts": [
