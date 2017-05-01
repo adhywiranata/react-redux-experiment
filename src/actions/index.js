@@ -39,7 +39,7 @@ export const fetchUser = () => {
 
 export const fetchPostsSuccess = (newUser) => {
   return {
-    type: ActionTypes.ADD_POST_SUCCESS,
+    type: ActionTypes.FETCH_POST_SUCCESS,
     payload: newUser,
   };
 };

@@ -1,4 +1,5 @@
 import React from 'react';
+import moment from 'moment';
 
 const styles = {
   userItem: {
@@ -9,9 +10,18 @@ const styles = {
   }
 };
 
-const PostItem = (props) => (
+const PostItem = ({ title, content, user, createdAt, createDate, comments }) => (
   <div style={styles.userItem}>
-    <h3>{ props.id }</h3>
+    <p>
+      posted by { user.name } { moment(createDate).fromNow() }
+    </p>
+    <h3>{ title }</h3>
+    <p>{ content }</p>
+    <p style={{ fontSize: '1.2em' }}>{ comments.length } Comments</p>
+    <hr />
+    <ul>
+    { comments.map(comment => <li key={comment.id}>{comment.comment}</li>)}
+    </ul>
   </div>
 );
 

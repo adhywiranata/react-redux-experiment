@@ -2,7 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
 
-import { fetchPost } from '../actions';
+import { fetchPosts } from '../actions';
 import PostItem from '../components/PostItem';
 
 const styles = {
@@ -20,7 +20,7 @@ const styles = {
 
 class PostContainer extends React.Component {
   componentDidMount() {
-    this.props.fetchPost();
+    this.props.fetchPosts();
   }
 
   render() {
