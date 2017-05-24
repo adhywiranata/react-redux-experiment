@@ -2,7 +2,7 @@ import {
   FETCH_USERS,
   FETCH_USER_SUCCESS,
   FETCH_USER_FAILED,
-  ADD_USER_LOADING,
+  ADD_USER,
   ADD_USER_SUCCESS,
   ADD_USER_FAILED,
 } from './constants';
@@ -17,19 +17,10 @@ export const addUserFailed = err => ({
   payload: err,
 });
 
-export const addUser = newUser => (dispatch) => {
-  dispatch({ type: ADD_USER_LOADING });
-  fetch('http://localhost:1234/users', {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json'
-    },
-    body: JSON.stringify(newUser),
-  })
-    .then(res => res.json())
-    .then(data => dispatch(addUserSuccess(newUser)))
-    .catch(err => dispatch(addUserFailed(err)));
-};
+export const addUser = newUser => ({
+  type: ADD_USER,
+  payload: newUser,
+});
 
 export const fetchUsersSuccess = users => ({
   type: FETCH_USER_SUCCESS,
