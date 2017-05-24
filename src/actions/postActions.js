@@ -1,4 +1,4 @@
-import { FETCH_POST_SUCCESS, ADD_POST_SUCCESS } from './constants';
+import { FETCH_POSTS, FETCH_POST_SUCCESS, ADD_POST_SUCCESS } from './constants';
 
 export const addPostSuccess = newPost => ({
   type: ADD_POST_SUCCESS,
@@ -24,8 +24,12 @@ export const fetchPostsSuccess = newUser => ({
   payload: newUser,
 });
 
-export const fetchPosts = () => (dispatch) => {
-  fetch('http://localhost:1234/api/posts')
-    .then(res => res.json())
-    .then(data => dispatch(fetchPostsSuccess(data)));
-  };
+export const fetchPosts = () => ({
+  type: FETCH_POSTS,
+});
+
+// export const fetchPosts = () => (dispatch) => {
+//   fetch('http://localhost:1234/api/posts')
+//     .then(res => res.json())
+//     .then(data => dispatch(fetchPostsSuccess(data)));
+// };

@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 export const fetchUsers = () => {
-  return axios.get('http://localhost:1234/users')
+  return axios.get('http://localhost:1234/users');
 };
 
 export const addUser = (newUser) => {
@@ -11,4 +11,8 @@ export const addUser = (newUser) => {
     url: 'http://localhost:1234/users',
     data: newUser,
   });
+};
+
+export const fetchPosts = () => {
+  return axios.get('http://localhost:1234/api/posts');
 };
