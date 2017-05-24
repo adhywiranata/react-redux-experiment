@@ -8,6 +8,7 @@
 - React Router DOM
 - React - Redux Containers
 - __step up!__ Add more complexity (Post Create-Read-Search App)
+- Action Creator Loading and Failed Status for User Actions
 
 ## Running Server API
 - Installing JSON Server

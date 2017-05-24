@@ -27,7 +27,7 @@ const fetchUser = (state, payload) => {
 };
 
 const fetchUserFailed = (state, payload) => {
-  return { ...state, isFetching: false, fetchError: true, fetchErrorMessage: payload };
+  return { ...state, isFetching: false, fetchError: true, fetchErrorMessage: payload.toString() };
 };
 
 const addUserLoading = (state) => {
@@ -42,7 +42,7 @@ const addUser = (state, payload) => {
 };
 
 const addUserFailed = (state, payload) => {
-  return { ...state, isUpdating: false, updateError: true, updateDataErrorMessage: payload };
+  return { ...state, isUpdating: false, updateError: true, updateDataErrorMessage: payload.toString() };
 };
 
 const userReducer = (state = initialState, action) => {
