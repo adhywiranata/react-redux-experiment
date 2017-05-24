@@ -1,6 +1,6 @@
 import { put, call, takeEvery, all } from 'redux-saga/effects';
 
-import * as ActionTypes from './constants';
+import * as ActionTypes from '../actions/constants';
 import * as Api from '../services/apis';
 
 // worker saga to fetchUsers
