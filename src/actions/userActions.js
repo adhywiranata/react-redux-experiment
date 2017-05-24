@@ -1,6 +1,6 @@
 import {
+  FETCH_USERS,
   FETCH_USER_SUCCESS,
-  FETCH_USER_LOADING,
   FETCH_USER_FAILED,
   ADD_USER_LOADING,
   ADD_USER_SUCCESS,
@@ -41,10 +41,6 @@ export const fetchUsersFailed = err => ({
   payload: err,
 });
 
-export const fetchUsers = () => (dispatch) => {
-  dispatch({ type: FETCH_USER_LOADING });
-  fetch('http://localhost:1234/users')
-    .then(res => res.json())
-    .then(data => dispatch(fetchUsersSuccess(data)))
-    .catch(err => dispatch(fetchUsersFailed(err)));
-};
+export const fetchUsers = () => ({
+  type: FETCH_USERS,
+});

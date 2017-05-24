@@ -21,6 +21,7 @@ const styles = {
 class UserList extends React.Component {
   componentDidMount() {
     this.props.fetchUsers();
+    // this.props.exampleRunSaga();
   }
 
   render() {
