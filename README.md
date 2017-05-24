@@ -9,6 +9,7 @@
 - React - Redux Containers
 - __step up!__ Add more complexity (Post Create-Read-Search App)
 - Action Creator Loading and Failed Status for User Actions
+- Remove thunk async action creators and implement Redux Saga
 
 ## Running Server API
 - Installing JSON Server
