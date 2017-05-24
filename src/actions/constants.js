@@ -8,7 +8,10 @@ export const ADD_USER_LOADING = 'ADD_USER_LOADING';
 export const ADD_USER_SUCCESS = 'ADD_USER_SUCCESS';
 export const ADD_USER_FAILED = 'ADD_USER_FAILED';
 
+export const ADD_POST = 'ADD_POST';
+export const ADD_POST_LOADING = 'ADD_POST_LOADING';
 export const ADD_POST_SUCCESS = 'ADD_POST_SUCCESS';
+export const ADD_POST_FAILED = 'ADD_POST_FAILED';
 
 export const FETCH_POSTS  = 'FETCH_POSTS';
 export const FETCH_POST_LOADING = 'FETCH_POST_LOADING';

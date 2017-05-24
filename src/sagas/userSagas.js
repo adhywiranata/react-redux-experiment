@@ -23,7 +23,6 @@ export function* watchFetchUsers() {
 export function* addUser(action) {
   yield put({ type: ActionTypes.ADD_USER_LOADING });
   yield call(Api.addUser, action.payload);
-  console.log(action.payload);
   try {
     yield put({ type: ActionTypes.ADD_USER_SUCCESS, payload: action.payload });
   } catch(e) {

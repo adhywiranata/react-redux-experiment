@@ -15,6 +15,21 @@ export function* fetchPosts() {
 }
 
 // watcher saga to fetchPosts
-export function* watcherFetchPosts() {
+export function* watchFetchPosts() {
   yield takeEvery(ActionTypes.FETCH_POSTS, fetchPosts);
+}
+
+
+function* addPost(action) {
+  yield put({ type: ActionTypes.ADD_POST_LOADING });
+  yield call(Api.addPost, action.payload);
+  try {
+    yield put({ type: ActionTypes.ADD_POST_SUCCESS, payload: action.payload });
+  } catch(e) {
+    yield put({ type: ActionTypes.ADD_POST_FAILED, payload: e.message });
+  }
+}
+
+export function* watchAddPost() {
+  yield takeEvery(ActionTypes.ADD_POST, addPost);
 }

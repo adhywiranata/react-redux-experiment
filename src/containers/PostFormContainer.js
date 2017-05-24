@@ -1,5 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
+import { Redirect } from 'react-router';
 
 import { addPost } from '../actions';
 import FormSection from '../components/FormSection';
@@ -10,6 +11,7 @@ const initialState = {
   title: '',
   userId: 1,
   content: '',
+  isSubmitted: false,
 };
 
 class UserFormContainer extends React.Component {
@@ -27,6 +29,9 @@ class UserFormContainer extends React.Component {
   render() {
     return (
       <div style={styles.addFormContainer}>
+        { (this.state.isSubmitted && this.props.isUpdated) && <Redirect to={{
+          pathname: '/posts',
+        }}/> }
         <h3>ADD NEW POST</h3>
         <form
           onSubmit={(e) => {
